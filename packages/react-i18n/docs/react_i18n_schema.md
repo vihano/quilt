@@ -156,6 +156,8 @@ React I18n can be serialized to different formats. However, not all serializatio
 
 When serialized to [JSON5](https://json5.org/), each of the dictionaries become JSON5 `object` types, and the keys and leaf values are both JSON5 `string` types.
 
+**Note:** A very nice advantage that JSON5 offers over JSON is the ability to include comments. Some tools (like the Translation Platform) are able to present these comments to translators as a means of [providing additional context](https://development.shopify.io/engineering/developing_at_Shopify/internationalization/providing_context_notes) during the translation process. Therefore, the use of JSON5 is prefered over JSON whenever feasible.
+
 **Example React I18n JSON5 file**
 
 ```json5
